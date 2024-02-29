@@ -1,18 +1,18 @@
-const userName = document.getElementById('#userName');
-const userTitle = document.getElementById('#userTitle');
-const userComment = document.getElementById('#userComment');
-const savedBlog = document.querySelector('#buttonclick')
+// const userName = document.getElementById('userNames');
+// const userTitle = document.getElementById('userTitles');
+// const userComment = document.getElementById('userComments');
+// const savedBlog = document.querySelector('#buttonclick');
 
 
 
-function blogForm(event) {
+function savedBlogs(event) {
     event.preventDefault();
 
-    let userName = document.getElementById('#userName').value;
-    let userTitle = document.getElementById('#userTitle').value;
-    let userComment = document.getElementById('#userComment').value;
+    let userName = document.getElementById('userNames').value;
+    let userTitle = document.getElementById('userTitles').value;
+    let userComment = document.getElementById('userComments').value;
 
-
+  
   
 if (userName ==="") {
 alert("Please fill in blank spaces")
@@ -36,7 +36,9 @@ console.log(savedBlog);
 }
 }
 const click = document.querySelector('#buttonclick')
-click.addEventListener('click', blogForm());
+click.addEventListener('click', savedBlogs);
 
-
-  
+const blog1 = document.getElementById('buttonclick')
+blog1.addEventListener('click' , function(){
+window.location.href = "./blog.html" 
+})

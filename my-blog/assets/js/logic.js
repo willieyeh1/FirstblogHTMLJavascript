@@ -1,10 +1,11 @@
 const toggle = document.getElementById('switchToggle');
 const dark = document.getElementById('darkMode');
-
+console.log (dark.id)
 let brightness = localStorage.getItem('brightness')
 
 function setBrightness() {
     dark.id = brightness
+    
 }
 setBrightness()
 

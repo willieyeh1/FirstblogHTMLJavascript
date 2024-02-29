@@ -1,13 +1,26 @@
-for (let i = 0; i < employeesArray.length; i++) {
-    const currentEmployee = employeesArray[i];
+let blogger = JSON.parse (localStorage.getItem('savedBlog'))
+console.log (blogger)
+let post = document.getElementById('blogs')
+let title = document.createElement('h1')
+title.textContent = `${blogger["userTitle"]}`
 
-    const newTableRow = document.createElement("tr");
+document.getElementById('blogs').append(title)
 
-    const firstNameCell = document.createElement("td");
-    firstNameCell.textContent = currentEmployee.firstName;
-    newTableRow.append(firstNameCell);
 
-    const lastNameCell = document.createElement("td");
-    lastNameCell.textContent = currentEmployee.lastName;
-    newTableRow.append(lastNameCell);
-}
+
+let user = document.getElementById('blogs')
+let usersTitle = document.createElement('h2')
+
+title.textContent = `${blogger["userName"]}`
+
+document.getElementById('blogs').append(title)
+
+let  = JSON.parse (localStorage.getItem('savedBlog'))
+console.log (blogger)
+
+let post = document.getElementById('blogs')
+let title = document.createElement('h3')
+
+title.textContent = `${blogger["userComment"]}`
+
+document.getElementById('blogs').append(title)
