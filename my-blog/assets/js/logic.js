@@ -3,11 +3,11 @@ const dark = document.getElementById('darkMode');
 console.log (dark.id)
 let brightness = localStorage.getItem('brightness')
 
-function setBrightness() {
+function Brightness() {
     dark.id = brightness
     
 }
-setBrightness()
+Brightness()
 
 toggle.addEventListener('click', function() {
     // document.body.classList.toggle('#darkMode')
